@@ -74,8 +74,8 @@ const Skills = () => {
       <h2 className="section-title text-center">Skills & Certifications</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-        <div>
-          <Card className="h-full">
+        <div className="flex flex-col gap-8">
+          <Card>
             <CardHeader>
               <CardTitle className="text-2xl font-display text-portfolio-primary">Technical Skills</CardTitle>
             </CardHeader>
@@ -85,9 +85,7 @@ const Skills = () => {
               ))}
             </CardContent>
           </Card>
-        </div>
-        
-        <div className="flex flex-col gap-8">
+          
           <Card>
             <CardHeader>
               <CardTitle className="text-2xl font-display text-portfolio-primary">Languages</CardTitle>
@@ -98,8 +96,10 @@ const Skills = () => {
               ))}
             </CardContent>
           </Card>
-          
-          <Card>
+        </div>
+        
+        <div>
+          <Card className="h-full">
             <CardHeader>
               <CardTitle className="text-2xl font-display text-portfolio-primary">Certifications</CardTitle>
             </CardHeader>
