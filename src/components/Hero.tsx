@@ -29,12 +29,13 @@ const Hero = () => {
             </div>
           </div>
           <div className="md:w-1/2 flex justify-center animate-fade-in" style={{ animationDelay: "0.5s" }}>
-            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-tr from-portfolio-primary to-portfolio-accent flex items-center justify-center">
-              <div className="w-60 h-60 md:w-76 md:h-76 rounded-full bg-white flex items-center justify-center overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center bg-portfolio-light text-portfolio-primary font-display font-bold text-5xl p-4 text-center">
-                  MPL
-                </div>
-              </div>
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-portfolio-primary shadow-lg">
+              <img 
+                src="/placeholder.svg" 
+                alt="Maria Paula Lauria"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-portfolio-primary/10"></div>
             </div>
           </div>
         </div>

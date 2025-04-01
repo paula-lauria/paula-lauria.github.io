@@ -4,9 +4,11 @@ import {
   Card, 
   CardContent, 
   CardHeader, 
-  CardTitle 
+  CardTitle,
+  CardDescription
 } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
+import { Badge } from "@/components/ui/badge";
 
 interface SkillItemProps {
   name: string;
@@ -18,9 +20,8 @@ const SkillItem = ({ name, level }: SkillItemProps) => {
     <div className="mb-4">
       <div className="flex justify-between items-center mb-1">
         <span>{name}</span>
-        <span className="text-sm text-portfolio-muted">{level}%</span>
       </div>
-      <Progress value={level} className="h-2" indicatorClassName="bg-portfolio-primary" />
+      <Progress value={level} className="h-2" />
     </div>
   );
 };
@@ -45,16 +46,27 @@ const Skills = () => {
   ];
 
   const certifications = [
-    "Cloud Digital Leader - Google Cloud Skills Boost (in progress)",
-    "Project Management - Choralia (Nov 2023)",
-    "Product Management - BrainStation (Jul-Aug 2023)",
-    "Google Analytics 4 (GA4) - Google Skillshop (May 2023)",
-    "IELTS - British Council (Mar 2022)",
-    "Certified Marketer (CM1) - General Assembly (May 2022)",
-    "Public Speaking - Academia de Comunicación Mai Pistiner (Mar 2022)",
-    "Project Management - Udemy (Dec 2021 - Jan 2022)",
-    "Excel Essentials - Udemy (2021)",
-    "SQL for Beginners - Udemy (2021)",
+    { name: "Cloud Digital Leader", organization: "Google Cloud Skills Boost", status: "in progress" },
+    { name: "Project Management", organization: "Choralia", date: "Nov 2023" },
+    { name: "Product Management", organization: "BrainStation", date: "Jul-Aug 2023" },
+    { name: "Google Analytics 4 (GA4)", organization: "Google Skillshop", date: "May 2023" },
+    { name: "IELTS", organization: "British Council", date: "Mar 2022" },
+    { name: "Certified Marketer (CM1)", organization: "General Assembly", date: "May 2022" },
+    { name: "Public Speaking", organization: "Academia de Comunicación Mai Pistiner", date: "Mar 2022" },
+    { name: "Project Management", organization: "Udemy", date: "Dec 2021 - Jan 2022" },
+    { name: "Excel Essentials", organization: "Udemy", date: "2021" },
+    { name: "SQL for Beginners", organization: "Udemy", date: "2021" },
+  ];
+
+  const softSkills = [
+    "Strategic thinking", 
+    "Process optimization", 
+    "Team player", 
+    "Proactivity", 
+    "Interpersonal relationships", 
+    "Leadership", 
+    "Creativity", 
+    "Continuous learning"
   ];
 
   return (
@@ -92,13 +104,34 @@ const Skills = () => {
               <CardTitle className="text-2xl font-display text-portfolio-primary">Certifications</CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="list-disc list-inside space-y-2">
+              <div className="grid grid-cols-1 gap-3">
                 {certifications.map((cert, index) => (
-                  <li key={index} className="text-portfolio-muted">{cert}</li>
+                  <div key={index} className="flex flex-col p-3 border border-portfolio-secondary/50 rounded-lg hover:border-portfolio-primary/50 transition-all">
+                    <div className="flex justify-between items-center">
+                      <h4 className="font-semibold">{cert.name}</h4>
+                      {cert.status ? (
+                        <Badge variant="outline" className="bg-portfolio-secondary/20">{cert.status}</Badge>
+                      ) : (
+                        <span className="text-sm text-portfolio-muted">{cert.date}</span>
+                      )}
+                    </div>
+                    <p className="text-sm text-portfolio-muted">{cert.organization}</p>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </CardContent>
           </Card>
+        </div>
+      </div>
+
+      <div className="mt-12 bg-portfolio-secondary/30 rounded-2xl p-6 md:p-8">
+        <h3 className="text-xl md:text-2xl font-display text-portfolio-primary font-semibold mb-4">Soft Skills</h3>
+        <div className="flex flex-wrap gap-2">
+          {softSkills.map((skill, index) => (
+            <Badge key={index} className="bg-portfolio-primary/10 text-portfolio-primary hover:bg-portfolio-primary/20 px-3 py-1 text-sm">
+              {skill}
+            </Badge>
+          ))}
         </div>
       </div>
     </section>

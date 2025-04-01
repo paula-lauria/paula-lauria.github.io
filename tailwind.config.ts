@@ -63,14 +63,14 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for Paula's portfolio
+				// Custom colors for Paula's portfolio - updated with dark purple as primary
 				portfolio: {
-					primary: '#0EA5E9',    // Ocean Blue
+					primary: '#1A1F2C',    // Dark Purple/Violet
 					secondary: '#E5DEFF',  // Soft Purple
 					dark: '#1A1F2C',       // Dark Purple
 					light: '#F8FAFC',      // Light background
 					muted: '#8E9196',      // Neutral Gray
-					accent: '#9b87f5',     // Primary Purple
+					accent: '#6E59A5',     // Secondary Purple
 				},
 			},
 			fontFamily: {
