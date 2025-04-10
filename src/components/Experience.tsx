@@ -39,73 +39,80 @@ const ExperienceItem = ({ title, company, location, period, responsibilities }: 
 const Experience = () => {
   const experiences = [
     {
-      title: "Data & Analytics Lead (EMEA)",
-      company: "Publicis Groupe - Zenith",
+      title: "Data & Digital Strategy Manager",
+      company: "Omnicom Media Group",
       location: "Milan, Italy",
-      period: "Sept 2022 - Present",
+      period: "May 2024 - Present",
       responsibilities: [
-        "Strategy, proposal, and management of Marketing Tech solutions.",
-        "End-to-end Data Analytics and Marketing Tech product coordination, including development and release.",
-        "Collaboration on internal tech developments to increase efficiency by automating processes and standardizing data structure cross-client and cross-agency.",
-        "Collaboration on the application of AI-based products on offered services.",
-        "Direct report of data visualization team and internal mentorship to fellow team members and off-shore colleagues."
+        "Develop and implement data and digital strategies for new business initiatives and client portfolios, while co-leading the digital strategy team.",
+        "Develop business models, promote innovation and AI use, and align data-driven solutions with the company's objectives.",
+        "Work with cross-functional teams to streamline data orchestration and activation.",
+        "Direct reporting to C-level and presentation to the board."
       ]
     },
     {
-      title: "Data Strategy Project Manager (LATAM and Global)",
-      company: "Publicis Groupe - Digitas",
+      title: "Data & Analytics Lead",
+      company: "Publicis Groupe",
+      location: "Milan, Italy",
+      period: "Sept 2022 - May 2024",
+      responsibilities: [
+        "Led Data & MarTech strategy and product development, driving efficiency through AI integration and process standardization.",
+        "Led the data visualization team, mentoring onshore and offshore colleagues.",
+        "Managed the development of internal products across the company to enhance operational impact through product management methodologies."
+      ]
+    },
+    {
+      title: "Data Analytics Project Manager",
+      company: "Publicis Groupe",
       location: "Buenos Aires, Argentina",
       period: "Nov 2021 - Sept 2022",
       responsibilities: [
-        "Optimized processes and coordinated them cross-market and cross-areas by applying AGILE methodologies for the creation and maintenance of BI projects within Tableau, Tibco, and PowerBI.",
-        "Provided consulting to other areas of the agency and contributed to pitches.",
-        "Came up with business models for data-based solutions -primarily focused on social media-, which were later offered to our clients and for which I tracked the later development.",
-        "Provided ad-hoc Social Network Analysis (SNA) and social listening insights.",
-        "Led and designed regional media and research training sessions for data-oriented profiles."
+        "Streamlined cross-market BI projects using AGILE methodologies (Tableau, Tibco, PowerBI).",
+        "Consulted on data-driven solutions, contributing to pitches and business model development.",
+        "Delivered Social Network Analysis and social listening insights to drive strategy.",
+        "Led regional training sessions for data teams, enhancing media-related data skills and knowledge."
       ]
     },
     {
-      title: "Sr Data Analyst (USA)",
+      title: "Sr Data Analyst",
       company: "Publicis Groupe",
       location: "Buenos Aires, Argentina",
       period: "Apr 2021 - Nov 2021",
       responsibilities: [
-        "Responsible for coordination of campaign brand lift studies across key LOBs.",
-        "Budget and collaboration management across research partners and internal teams.",
+        "Coordinated campaign brand lift studies across key LOBs.",
+        "Tracked budget and enhanced collaboration across research partners and internal teams.",
         "Optimized internal practices such as documentation, process trackers, and taxonomy criteria files."
       ]
     },
     {
-      title: "Jr Data Analyst (USA)",
+      title: "Jr Data Analyst",
       company: "Publicis Groupe",
       location: "Buenos Aires, Argentina",
       period: "Aug 2019 - Apr 2021",
       responsibilities: [
-        "Led performance reporting and insight generation for US clients' digital media campaigns and websites.",
-        "Generated social media analysis using different data insights and visualization tools.",
-        "Optimized reporting processes through automation and machine learning technology, leading to a 50% reduction in workload.",
-        "Handled ad-hoc data strategy and consulting requests from US clients and coached interns and new entries."
+        "Generated performance reports and insights for USA clients' digital campaigns and website activity.",
+        "Analyzed social media data and automated reporting processes, reducing workload by over 50%.",
+        "Developed ad-hoc data strategies for the local team, provided consulting, and mentored interns and new team members."
       ]
     },
     {
-      title: "Jr Digital Analyst (USA, UK and LATAM)",
+      title: "Jr Digital Analyst",
       company: "UTAG",
       location: "Buenos Aires, Argentina",
-      period: "Jan 2019 - Aug 2021",
+      period: "Jan 2019 - Aug 2019",
       responsibilities: [
-        "Planning, implementation, optimization, and reporting of cross-media digital campaigns (Social Media, Google Ads, and Programmatic).",
-        "Daily client management of offshore accounts, briefing, budget pacing, and performance tracking.",
-        "Paid Media strategy building for USA and UK-based clients."
+        "Developed paid media strategies for USA and UK-based clients.",
+        "Daily managed offshore +17 clients regarding end-to-end operations, from the brief to reporting.",
+        "Planned, implemented, optimized, and built reports of cross-media digital campaigns (Social Media, Search, and Programmatic)."
       ]
     },
     {
-      title: "Marketing Intern (ARG)",
+      title: "Marketing Intern",
       company: "Laboratorios Roemmers",
       location: "Buenos Aires, Argentina",
       period: "Mar 2017 - Dec 2018",
       responsibilities: [
-        "Sales reports, competitors analysis, and assistance to the Sales & Marketing management.",
-        "Web content creation, customer service & billing control for paid offline and online media."
+        "Built market analysis, assisted the Trade & Product Marketing management, customer service, and controlled billing for the area."
       ]
     }
   ];

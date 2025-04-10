@@ -11,9 +11,10 @@ const About = () => {
         
         <div className="max-w-4xl mx-auto">
           <p className="text-lg text-center mb-12">
-            Marketer with +6 years of work experience and 5 years working in data. I like being a bridge between business and tech. 
-            Used to working with multidisciplinary teams, tracking projects, and organizing processes. 
-            Passionate about understanding consumer behavior and coming up with innovative marketing strategies integrating technology, creativity, and data.
+            Data Strategy & Innovation Professional with +8 years of experience leading digital acceleration, audience intelligence, and data-driven transformation. 
+            Proven track record in business model strategy, analytics, and cross-functional leadership.
+            Bridging business insight, technology, and storytelling to deliver impactful solutions at scale.
+            Fluent in Spanish, English and Italian.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -24,7 +25,7 @@ const About = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Profile</h3>
                 <p className="text-center text-portfolio-muted">
-                  Marketing & Data professional with a passion for technology and innovation
+                  Data & Marketing professional with a passion for technology and innovation
                 </p>
               </CardContent>
             </Card>
@@ -36,7 +37,7 @@ const About = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Experience</h3>
                 <p className="text-center text-portfolio-muted">
-                  Over 6 years in marketing and 5 years in data analytics across global markets
+                  Over 8 years in marketing and data analytics across global markets
                 </p>
               </CardContent>
             </Card>
@@ -50,31 +51,10 @@ const About = () => {
                 <p className="text-center text-portfolio-muted">
                   Based in Milan, Italy
                   <br />
-                  Open to relocation
+                  Italian citizen
                 </p>
               </CardContent>
             </Card>
-          </div>
-
-          <div className="mt-12 bg-portfolio-secondary/30 rounded-2xl p-6 md:p-8">
-            <h3 className="text-xl md:text-2xl font-display font-semibold mb-4">Soft Skills</h3>
-            <ul className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {[
-                "Strategic thinking", 
-                "Process optimization", 
-                "Team player", 
-                "Proactivity", 
-                "Interpersonal relationships", 
-                "Leadership", 
-                "Creativity", 
-                "Continuous learning"
-              ].map((skill, index) => (
-                <li key={index} className="flex items-center">
-                  <span className="w-2 h-2 rounded-full bg-portfolio-primary mr-2"></span>
-                  <span>{skill}</span>
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
       </div>

@@ -41,7 +41,7 @@ const Contact = () => {
     {
       icon: <MapPin className="h-5 w-5" />,
       label: "Location",
-      value: "Milan, Italy",
+      value: "Milan, Italy - Italian citizen",
       href: null
     }
   ];
@@ -55,7 +55,7 @@ const Contact = () => {
           <div>
             <h3 className="text-2xl font-display font-semibold mb-6">Contact Information</h3>
             <p className="text-portfolio-muted mb-8">
-              Feel free to reach out if you're looking for a marketing and data professional, 
+              Feel free to reach out if you're looking for a data strategy professional, 
               have a question, or just want to connect.
             </p>
             

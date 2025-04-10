@@ -14,10 +14,10 @@ const Hero = () => {
               Maria Paula Lauria
             </h1>
             <h2 className="text-xl md:text-2xl font-medium text-portfolio-muted mb-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              Marketing & Data Professional
+              Data Strategy & Innovation Professional
             </h2>
             <p className="text-lg mb-8 max-w-lg mx-auto md:mx-0 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-              A bridge between business and tech with over 6 years of experience in marketing and data analytics, passionate about innovative strategies and consumer behavior.
+              Professional with +8 years of experience leading digital acceleration, audience intelligence, and data-driven transformation across EMEA, LATAM, and U.S. markets.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start animate-fade-in" style={{ animationDelay: "0.4s" }}>
               <Button asChild className="bg-portfolio-primary hover:bg-portfolio-primary/90">

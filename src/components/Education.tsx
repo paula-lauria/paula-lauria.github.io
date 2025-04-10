@@ -39,15 +39,6 @@ const Education = () => {
       details: [
         "Accredited by the Accreditation Council for Business Schools and Programs (ACBSP)"
       ]
-    },
-    {
-      institution: "Instituto Modelo Banfield",
-      degree: "HS Diploma in Humanities & Social Studies",
-      period: "Graduated Dec 2014",
-      details: [
-        "Participated in Model United Nations for two consecutive years",
-        "School choir"
-      ]
     }
   ];
 
